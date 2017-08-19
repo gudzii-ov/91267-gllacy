@@ -28,7 +28,7 @@
       <ul class="user-navigation">
         <li class="shop-search">
           <form action="#" method="get">
-            <input type="text" name="search-query" placeholder="Что ищем?">
+            <input type="search" name="search-query" placeholder="Что ищем?">
             <button type="submit">Найти</button>
           </form>
         </li>
@@ -36,7 +36,7 @@
           <a href="#">Вход</a>
           <section class="shop-login-form">
             <form action="#" method="post">
-              <input type="text" name="login-email" placeholder="Электронная почта">
+              <input type="email" name="login-email" placeholder="Электронная почта">
               <input type="password" name="login-password" placeholder="Пароль">
               <button type="submit">Войти</button>
             </form>
@@ -49,14 +49,14 @@
           <div>
             <table>
               <tr>
-                <td><button>Удалить</button></td>
+                <td><button type="button">Удалить</button></td>
                 <td><img src="#" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
                 <td><a href="#">Пломбир с апельсиновым джемом</a></td>
                 <td>1,5 кг x 200 руб.</td>
                 <td>300 руб.</td>
               </tr>
               <tr>
-                <td><button>Удалить</button></td>
+                <td><button type="button">Удалить</button></td>
                 <td><img src="#" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
                 <td><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
                 <td>1,5 кг x 300 руб.</td>
@@ -100,19 +100,19 @@
           <div>
             Жирность:
             <label>
-              <input type="radio" name="fat-0">
+              <input type="radio" name="fat" value="0">
               0%
             </label>
             <label>
-              <input type="radio" name="fat-less-10" checked>
+              <input type="radio" name="fat" value="less-10" checked>
               до 10%
             </label>
             <label>
-              <input type="radio" name="fat-less-30">
+              <input type="radio" name="fat" value="less-30">
               до 30%
             </label>
             <label>
-              <input type="radio" name="fat-more-30">
+              <input type="radio" name="fat" value="more-30">
               выше 30%
             </label>
           </div>
