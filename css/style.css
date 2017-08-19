@@ -8,6 +8,12 @@ body {
   background-color: #849d8f;
 }
 
+.container h1 {
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff;
+}
+
 .banners-item h3,
 .banners-item p,
 .banners-item a {
