@@ -8,12 +8,12 @@ body {
   background-color: #849d8f;
 }
 
-.container h1 {
+.catalog-header {
   font-size: 35px;
   line-height: 41px;
 }
 
-.banners-item h3 {
+.banners-header {
   font-weight: bold;
   font-size: 35px;
   line-height: 41px;
