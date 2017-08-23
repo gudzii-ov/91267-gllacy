@@ -11,6 +11,7 @@
         <img src="img/svg/logo.svg" width="154" height="64" alt="GllacyShop">
       </a>
       <nav class="site-navigation">
+        <h2 class="visually-hidden">Главное меню сайта</h2>
         <ul>
           <li>
             <a href="#">Каталог</a>
@@ -28,17 +29,28 @@
       </nav>
       <ul class="user-navigation">
         <li class="shop-search">
+          <h3 class="visually-hidden">Поиск по сайту</h3>
           <form action="#" method="get">
-            <input type="search" name="search-query" placeholder="Что ищем?">
+            <label>
+              <span class="visually-hidden">Поиск</span>
+              <input type="search" name="search-query" placeholder="Что ищем?">
+            </label>
             <button type="submit">Найти</button>
           </form>
         </li>
         <li class="shop-login">
+          <h3 class="visually-hidden">Вход в личный кабинет</h3>
           <a href="#">Вход</a>
           <section class="shop-login-form">
             <form action="#" method="post">
-              <input type="email" name="login-email" placeholder="Электронная почта">
-              <input type="password" name="login-password" placeholder="Пароль">
+              <label>
+                <span class="visually-hidden">E-mail</span>
+                <input type="email" name="login-email" placeholder="Электронная почта">
+              </label>
+              <label>
+                <span class="visually-hidden">Пароль</span>
+                <input type="password" name="login-password" placeholder="Пароль">
+              </label>
               <button type="submit">Войти</button>
             </form>
             <a href="#">Забыли пароль?</a>
@@ -46,6 +58,7 @@
           </section>
         </li>
         <li class="shop-cart">
+          <h3 class="visually-hidden">Корзина</h3>
           <a href="#">Корзина</a>
           <div>
             <table>
@@ -72,6 +85,7 @@
         </li>
       </ul>
       <section class="shop-info">
+        <h2 class="visually-hidden">Контакты</h2>
         <p class="shop-schedule">С 10 до 20 ежедневно</p>
         <p class="shop-contacts">
           <a href="tel:88124502525">8 812 450-25-25</a>
@@ -83,6 +97,7 @@
       <p>Крем-брюле и пломбир с малиновым джемом</p>
       <a class="btn header-promo" href="#">Давайте оба!</a>
       <section class="banners">
+        <h2 class="visually-hidden">Выгодные предложения</h2>
         <article class="banners-item banner-raspberry">
           <h3 class="banners-header">Малинка даром!</h3>
           <p>
@@ -99,32 +114,30 @@
         </article>
       </section>
       <section class="catalog">
+        <h2 class="visually-hidden">Хиты продаж</h2>
         <article class="catalog-item">
           <img src="img/content/icecream/icecream-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           <span class="price">310 Р/кг</span>
-          <span>Хит</span>
         </article>
         <article class="catalog-item">
           <img src="img/content/icecream/icecream-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
           <a href="#">Сливочно-кофейное с кусочками шоколада</a>
           <span class="price">380 Р/кг</span>
-          <span>Хит</span>
         </article>
         <article class="catalog-item">
           <img src="img/content/icecream/icecream-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
           <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           <span class="price">355 Р/кг</span>
-          <span>Хит</span>
         </article>
         <article class="catalog-item">
           <img src="img/content/icecream/icecream-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
           <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
           <span class="price">415 Р/кг</span>
-          <span>Хит</span>
         </article>
       </section>
       <article class="about-us">
+        <h2 class="visually-hidden">О нас</h2>
         <p class="lead">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
         <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
         <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
@@ -136,13 +149,18 @@
         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </section>
       <section class="subscription">
+        <h2 class="visually-hidden">Подписка на рассылку</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form action="#" method="post">
-          <input type="email" name="subscription-email">
-          <input class="btn" type="submit" value="Отправить">
+          <label>
+            <span class="visually-hidden">Ваш e-mail для подписки</span>
+            <input type="email" name="subscription-email">
+          </label>
+          <button class="btn" type="submit">Отправить</button>
         </form>
       </section>
       <section class="map">
+        <h2 class="visually-hidden">Как нас найти?</h2>
         <img class="map-pin" src="#" width="80" height="140" alt="Мы здесь!">
         <article class="contacts">
           <p>Адрес главного офиса и офлайн магазина:</p>
@@ -155,17 +173,20 @@
     </main>
     <footer class="page-footer">
       <div class="footer-social">
+        <h2 class="visually-hidden">Наши странички в социальных сетях</h2>
         <a href="#">Твиттер</a>
         <a href="#">Инстаграм</a>
         <a href="#">Facebook</a>
         <a href="#">ВКонтакте</a>
       </div>
+      <h2 class="visually-hidden">Полезные ссылки</h2>
       <ul class="footer-navigation">
         <li class="footer-navigation-choosen-item"><a href="#">Для поставщиков</a></li>
         <li><a href="#">О производстве</a></li>
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
+      <h2 class="visually-hidden">Копирайт</h2>
       <p class="footer-copyright">
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy-small" width="108" height="39" alt="HTML Academy">
@@ -174,11 +195,21 @@
       </p>
     </footer>
     <section class="feedback-form">
+      <h2 class="visually-hidden">Обратная связь</h2>
       <p>Мы обязательно вам ответим!</p>
       <form action="#" method="post">
-        <input type="text" name="feedback-name" placeholder="Как вас зовут?">
-        <input type="email" name="feedback-email" placeholder="Ваша почта для ответа?">
-        <textarea rows="5" cols="40" name="feedback-text" placeholder="Напишите что-нибудь..."></textarea>
+        <label>
+          <span class="visually-hidden">Ваше имя</span>
+          <input type="text" name="feedback-name" placeholder="Как вас зовут?">
+        </label>
+        <label>
+          <span class="visually-hidden">Ваш e-mail</span>
+          <input type="email" name="feedback-email" placeholder="Ваша почта для ответа?">
+        </label>
+        <label>
+          <span class="visually-hidden">Ваш отзыв</span>
+          <textarea rows="5" cols="40" name="feedback-text" placeholder="Напишите что-нибудь..."></textarea>
+        </label>
         <button class="btn" type="submit">Отправить</button>
       </form>
     </section>

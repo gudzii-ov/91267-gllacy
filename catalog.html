@@ -11,6 +11,7 @@
         <img src="img/svg/logo.svg" width="154" height="64" alt="GllacyShop">
       </a>
       <nav class="site-navigation">
+        <h2 class="visually-hidden">Главное меню сайта</h2>
         <ul>
           <li class="active">
             <a href="#">Каталог</a>
@@ -28,25 +29,37 @@
       </nav>
       <ul class="user-navigation">
         <li class="shop-search">
+          <h3 class="visually-hidden">Поиск по сайту</h3>
           <form action="#" method="get">
-            <input type="search" name="search-query" placeholder="Что ищем?">
+            <label>
+              <span class="visually-hidden">Поиск</span>
+              <input type="search" name="search-query" placeholder="Что ищем?">
+            </label>
             <button type="submit">Найти</button>
           </form>
         </li>
         <li class="shop-login">
+          <h3 class="visually-hidden">Вход в личный кабинет</h3>
           <a href="#">Вход</a>
           <section class="shop-login-form">
             <form action="#" method="post">
-              <input type="email" name="login-email" placeholder="Электронная почта">
-              <input type="password" name="login-password" placeholder="Пароль">
+              <label>
+                <span class="visually-hidden">E-mail</span>
+                <input type="email" name="login-email" placeholder="Электронная почта">
+              </label>
+              <label>
+                <span class="visually-hidden">Пароль</span>
+                <input type="password" name="login-password" placeholder="Пароль">
+              </label>
               <button type="submit">Войти</button>
             </form>
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
           </section>
         </li>
-        <li class="shop-cart-filled">
-          <a href="#">2 товара</a>
+        <li class="shop-cart">
+          <h3 class="visually-hidden">Корзина</h3>
+          <a href="#">Корзина</a>
           <div>
             <table>
               <tr>
@@ -72,6 +85,7 @@
         </li>
       </ul>
       <section class="shop-info">
+        <h2 class="visually-hidden">Контакты</h2>
         <p class="shop-schedule">С 10 до 20 ежедневно</p>
         <p class="shop-contacts">
           <a href="tel:88124502525">8 812 450-25-25</a>
@@ -86,15 +100,16 @@
         <li>Сливочное</li>
       </ul>
       <section class="filter">
+        <h2 class="visually-hidden">Фильтры каталога мороженого</h2>
         <form action="#" method="get">
           <div>
-            Сортировка:
-            <select name="sort">
-              <option value="by-rating" selected>По популярности</option>
-              <option value="by-price-ascending">Сначала недорогие</option>
-              <option value="by-price-descending">Сначала дорогие</option>
-              <option value="by-fat">По жирности</option>
-            </select>
+            <label for="sort-field">Сортировка:</label>
+              <select name="sort" id="sort-field">
+                <option value="by-rating" selected>По популярности</option>
+                <option value="by-price-ascending">Сначала недорогие</option>
+                <option value="by-price-descending">Сначала дорогие</option>
+                <option value="by-fat">По жирности</option>
+              </select>
           </div>
           <div>
             Цена: 100 руб. - 500 руб.
@@ -133,10 +148,11 @@
               <input type="checkbox" name="jam"> джемы
             </label>
           </div>
-          <input type="submit" value="Применить">
+          <button type="submit">Применить</button>
         </form>
       </section>
       <section class="catalog">
+        <h2 class="visually-hidden">Каталог мороженого</h2>
         <article class="catalog-item">
           <img src="img/content/icecream/icecream-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -210,6 +226,7 @@
           <a class="btn" href="#">Быстрый просмотр</a>
         </article>
       </section>
+      <h3 class="visually-hidden">Страницы каталога</h3>
       <ul class="paginator">
         <li>Назад</li>
         <li class="current-page">1</li>
@@ -222,17 +239,20 @@
     </main>
     <footer class="page-footer">
       <div class="footer-social">
+        <h2 class="visually-hidden">Наши странички в социальных сетях</h2>
         <a href="#">Твиттер</a>
         <a href="#">Инстаграм</a>
         <a href="#">Facebook</a>
         <a href="#">ВКонтакте</a>
       </div>
+      <h2 class="visually-hidden">Полезные ссылки</h2>
       <ul class="footer-navigation">
         <li class="footer-navigation-choosen-item"><a href="#">Для поставщиков</a></li>
         <li><a href="#">О производстве</a></li>
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
+      <h2 class="visually-hidden">Копирайт</h2>
       <p class="footer-copyright">
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy-small" width="108" height="39" alt="HTML Academy">
