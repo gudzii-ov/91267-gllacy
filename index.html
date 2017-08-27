@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -16,7 +18,7 @@
           <li>
             <a href="#">Каталог</a>
             <ul class="site-navigation-submenu">
-              <li><a href="#">Новинки</a></li>
+              <li><a class="latest" href="#">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
@@ -28,7 +30,7 @@
         </ul>
       </nav>
       <ul class="user-navigation">
-        <li class="shop-search">
+        <li class="page-form shop-search">
           <h3 class="visually-hidden">Поиск по сайту</h3>
           <form action="#" method="get">
             <label>
@@ -38,7 +40,7 @@
             <button type="submit">Найти</button>
           </form>
         </li>
-        <li class="shop-login">
+        <li class="page-form shop-login">
           <h3 class="visually-hidden">Вход в личный кабинет</h3>
           <a href="#">Вход</a>
           <section class="shop-login-form">
@@ -51,7 +53,7 @@
                 <span class="visually-hidden">Пароль</span>
                 <input type="password" name="login-password" placeholder="Пароль">
               </label>
-              <button type="submit">Войти</button>
+              <button class="header-btn" type="submit">Войти</button>
             </form>
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
@@ -59,28 +61,28 @@
         </li>
         <li class="shop-cart">
           <h3 class="visually-hidden">Корзина</h3>
-          <a href="#">Корзина</a>
+          <a href="#">Пусто</a>
           <div>
-            <table>
+            <table class="shop-cart-content">
               <tr>
                 <td><button type="button">Удалить</button></td>
                 <td><img src="img/content/icecream/icecream-1-mini.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
                 <td><a href="#">Пломбир с апельсиновым джемом</a></td>
-                <td>1,5 кг x 200 руб.</td>
+                <td>1,5 кг x <span class="price">200 руб.</span></td>
                 <td>300 руб.</td>
               </tr>
               <tr>
                 <td><button type="button">Удалить</button></td>
                 <td><img src="img/content/icecream/icecream-3-mini.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
                 <td><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
-                <td>1,5 кг x 300 руб.</td>
+                <td>1,5 кг x <span class="price">300 руб.</span></td>
                 <td>450 руб.</td>
               </tr>
               <tr>
-                <td colspan="5">Итого: 750 руб.</td>
+                <td class="total" colspan="5">Итого: 750 руб.</td>
               </tr>
             </table>
-            <a class="btn" href="#">Оформить заказ</a>
+            <a class="header-btn" href="#">Оформить заказ</a>
           </div>
         </li>
       </ul>
@@ -92,10 +94,15 @@
         </p>
       </section>
     </header>
-    <main class="container">
+    <main>
       <img src="img/slider/slider-1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
-      <p>Крем-брюле и пломбир с малиновым джемом</p>
-      <a class="btn header-promo" href="#">Давайте оба!</a>
+      <p class="promo-header">Крем-брюле и пломбир с малиновым джемом</p>
+      <ul class="slider-switcher">
+        <li><button class="slider-btn slider-btn-active"></button></li>
+        <li><button class="slider-btn"></button></li>
+        <li><button class="slider-btn"></button></li>
+      </ul>
+      <a class="btn btn-promo" href="#">Давайте оба!</a>
       <section class="banners">
         <article class="banners-item banner-raspberry">
           <h3 class="banners-header">Малинка даром!</h3>
@@ -117,22 +124,34 @@
         <article class="catalog-item">
           <img src="img/content/icecream/icecream-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-          <span class="price">310 Р/кг</span>
+          <div class="price">
+            <span>310 &#8381;</span><span>/кг</span>
+          </div>
+          <a class="btn" href="#">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
           <img src="img/content/icecream/icecream-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
           <a href="#">Сливочно-кофейное с кусочками шоколада</a>
-          <span class="price">380 Р/кг</span>
+          <div class="price">
+            <span>380 &#8381;</span><span>/кг</span>
+          </div>
+          <a class="btn" href="#">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
           <img src="img/content/icecream/icecream-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
           <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-          <span class="price">355 Р/кг</span>
+          <div class="price">
+            <span>355 &#8381;</span><span>/кг</span>
+          </div>
+          <a class="btn" href="#">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
           <img src="img/content/icecream/icecream-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
           <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-          <span class="price">415 Р/кг</span>
+          <div class="price">
+            <span>415 &#8381;</span><span>/кг</span>
+          </div>
+          <a class="btn" href="#">Быстрый просмотр</a>
         </article>
       </section>
       <article class="about-us">
@@ -148,22 +167,23 @@
         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </section>
       <section class="subscription">
-        <h2 class="visually-hidden">Подписка на рассылку</h2>
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form action="#" method="post">
-          <label>
-            <span class="visually-hidden">Ваш e-mail для подписки</span>
-            <input type="email" name="subscription-email">
-          </label>
-          <button class="btn" type="submit">Отправить</button>
-        </form>
+        <div class="subscription-inner">
+          <h2 class="visually-hidden">Подписка на рассылку</h2>
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <form action="#" method="post">
+            <label>
+              <span class="visually-hidden">Ваш e-mail для подписки</span>
+              <input type="email" name="subscription-email" placeholder="Электронная почта">
+            </label>
+            <button class="btn" type="submit">Отправить</button>
+          </form>
+        </div>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Как нас найти?</h2>
-        <img class="map-pin" src="#" width="80" height="140" alt="Мы здесь!">
         <article class="contacts">
           <p>Адрес главного офиса и офлайн магазина:</p>
-          <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+          <p class="address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
           <p>Для заказов по телефону:</p>
           <p><a href="tel:88124502525">8 812 450-25-25</a> (с 10 до 20 ежедневно)</p>
           <a class="btn" href="#">Форма обратной связи</a>
@@ -171,35 +191,35 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="footer-social">
+      <section class="footer-social">
         <h2 class="visually-hidden">Наши странички в социальных сетях</h2>
         <a href="#">Твиттер</a>
         <a href="#">Инстаграм</a>
         <a href="#">Facebook</a>
         <a href="#">ВКонтакте</a>
-      </div>
-      <div class="footer-links">
+      </section>
+      <section class="footer-links">
         <h2 class="visually-hidden">Полезные ссылки</h2>
         <ul class="footer-navigation">
-          <li class="footer-navigation-choosen-item"><a href="#">Для поставщиков</a></li>
+          <li><a href="#">Для поставщиков</a></li>
           <li><a href="#">О производстве</a></li>
           <li><a href="#">Наши документы</a></li>
           <li><a href="#">Экологические стандарты</a></li>
         </ul>
-      </div>
-      <div class="footer-copyright">
+      </section>
+      <section class="footer-copyright">
         <h2 class="visually-hidden">Копирайт</h2>
         <p class="footer-copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/logo-htmlacademy-small" width="108" height="39" alt="HTML Academy">
+          <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/svg/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
           </a>
           <b>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</b>
         </p>
-      </div>
+      </section>
     </footer>
-    <section class="feedback-form">
+    <section class="page-form feedback-form">
       <h2 class="visually-hidden">Обратная связь</h2>
-      <p>Мы обязательно вам ответим!</p>
+      <p class="lead">Мы обязательно вам ответим!</p>
       <form action="#" method="post">
         <label>
           <span class="visually-hidden">Ваше имя</span>
