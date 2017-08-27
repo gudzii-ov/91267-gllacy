@@ -398,7 +398,6 @@ button.catalog-filter-item:active {
 
   background-color: rgb(255, 255, 255);
   background-image: url("../img/svg/bg-post.svg");
-  background-repeat: repeat;
 }
 
 .subscription-inner {
