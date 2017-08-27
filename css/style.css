@@ -152,7 +152,10 @@ a {
   font-size: 13px;
   line-height: 24px;
   color: rgb(50, 50, 50);
-  text-decoration: none;
+}
+
+.shop-login-form a {
+  text-decoration: underline;
 }
 
 .shop-login-form a:hover,
