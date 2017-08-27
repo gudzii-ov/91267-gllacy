@@ -272,6 +272,10 @@ a {
   line-height: 22px;
 }
 
+.banners-item a {
+  text-decoration: none;
+}
+
 .banner-raspberry {
   background-color: rgb(145, 6, 50);
   background-image: url("../img/backgrounds/raspberry.jpg");
@@ -323,6 +327,8 @@ button.catalog-filter-item:active {
 .catalog-item a:focus,
 .catalog-item a:active {
   color: rgb(255, 188, 158);
+
+  border-bottom: 1px solid rgba(255, 188, 158, 0.2);
 }
 
 .catalog-item .price {
@@ -345,6 +351,21 @@ button.catalog-filter-item:active {
 
 .paginator .current {
   line-height: 18px;
+  color: rgb(50, 50, 50);
+
+  background-color: rgb(255, 255, 255);
+}
+
+.paginator a {
+  text-decoration: none;
+}
+
+.paginator a:hover,
+.paginator a:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.paginator a:active {
   color: rgb(50, 50, 50);
 
   background-color: rgb(255, 255, 255);
