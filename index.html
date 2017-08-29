@@ -29,9 +29,10 @@
         </ul>
       </nav>
       <ul class="user-navigation">
-        <li class="page-form shop-search">
+        <li class="shop-search">
           <h3 class="visually-hidden">Поиск по сайту</h3>
-          <form action="#" method="get">
+          <img class="shop-search-btn" src="img/svg/loupe.svg" width="17" height="17" alt="Поиск">
+          <form class="page-form" action="#" method="get">
             <label>
               <span class="visually-hidden">Поиск</span>
               <input type="search" name="search-query" placeholder="Что ищем?">
@@ -61,8 +62,8 @@
         <li class="shop-cart">
           <h3 class="visually-hidden">Корзина</h3>
           <a href="#">Пусто</a>
-          <div>
-            <table class="shop-cart-content">
+          <div class="shop-cart-content">
+            <table>
               <tr>
                 <td><button type="button">Удалить</button></td>
                 <td><img src="img/content/icecream/icecream-1-mini.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
@@ -87,13 +88,11 @@
       </ul>
       <section class="shop-info">
         <h2 class="visually-hidden">Контакты</h2>
-        <p class="shop-schedule">С 10 до 20 ежедневно</p>
-        <p class="shop-contacts">
-          <a href="tel:88124502525">8 812 450-25-25</a>
-        </p>
+        <p>С 10 до 20 ежедневно</p>
+        <a href="tel:88124502525">8 812 450-25-25</a>
       </section>
     </header>
-    <main>
+    <main class="content">
       <img src="img/slider/slider-1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
       <p class="promo-header">Крем-брюле и пломбир с малиновым джемом</p>
       <ul class="slider-switcher">
@@ -161,23 +160,25 @@
         <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
         <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
       </article>
-      <section class="blog-news">
-        <h2 class="blog-news-header">Новое в нашем блоге</h2>
-        <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-      </section>
-      <section class="subscription">
-        <div class="subscription-inner">
-          <h2 class="visually-hidden">Подписка на рассылку</h2>
-          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form action="#" method="post">
-            <label>
-              <span class="visually-hidden">Ваш e-mail для подписки</span>
-              <input type="email" name="subscription-email" placeholder="Электронная почта">
-            </label>
-            <button class="btn" type="submit">Отправить</button>
-          </form>
-        </div>
-      </section>
+      <div class="center">
+        <section class="blog-news">
+          <h2 class="blog-news-header">Новое в нашем блоге</h2>
+          <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+        </section>
+        <section class="subscription">
+          <div class="subscription-inner">
+            <h2 class="visually-hidden">Подписка на рассылку</h2>
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <form class="page-form" action="#" method="post">
+              <label>
+                <span class="visually-hidden">Ваш e-mail для подписки</span>
+                <input type="email" name="subscription-email" placeholder="Электронная почта">
+              </label>
+              <button class="btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+      </div>
       <section class="map">
         <h2 class="visually-hidden">Как нас найти?</h2>
         <article class="contacts">
