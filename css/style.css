@@ -112,8 +112,9 @@ img {
   display: block;
 }
 
-.site-navigation .active {
+.site-navigation .active-page {
   color: rgb(255, 255, 255);
+  text-decoration: none;
 
   background-color: rgb(208, 112, 88);
 }
@@ -199,14 +200,14 @@ img {
 
   display: inline-block;
   vertical-align: top;
-  margin-right: 7px;
+  margin-right: 6px;
 }
 
 .user-navigation-item:last-of-type {
   margin-right: 0;
 }
 
-.shop-search {
+.shop-search-btn {
   width: 32px;
   height: 32px;
 
@@ -214,22 +215,18 @@ img {
   border-radius: 50%;
 }
 
-.shop-search img {
+.shop-search-btn img {
   position: absolute;
   top: 8px;
   left: 8px;
 }
 
-.shop-search:hover .shop-search-form {
+.shop-search-btn:hover .shop-search-form {
   display: block;
 }
 
 .shop-search-form {
   width: 340px;
-}
-
-.shop-search-form input {
-  width: 100%;
 }
 
 .user-navigation-item > a {
@@ -245,7 +242,7 @@ img {
   border-radius: 30px;
 }
 
-.shop-search:hover,
+.shop-search-btn:hover,
 .user-navigation-item:hover > a,
 .user-navigation-item:focus > a {
   color: rgb(50, 50, 50);
@@ -253,54 +250,67 @@ img {
   background-color: rgb(248, 247, 244);
 }
 
-.shop-login,
-.shop-cart {
+.shop-login-btn,
+.shop-cart-btn {
   background-repeat: no-repeat;
   background-position: 17px 50%;
 }
 
-.shop-login a,
-.shop-cart a {
+.shop-login-btn a,
+.shop-cart-btn a {
   padding-left: 44px;
 }
 
-.shop-login {
+.shop-login-btn {
   background-image: url(../img/svg/entrance.svg);
 }
 
-.shop-cart {
+.shop-cart-btn {
   min-width: 117px;
 
   background-image: url(../img/svg/basket.svg);
 }
 
-.user-navigation .header-btn {
+.btn {
+  display: inline-block;
+  padding: 10px 23px;
+
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   color: rgb(254, 254, 254);
 
   background-color: rgb(232, 77, 55);
+  background-image: linear-gradient(to top, rgb(202, 56, 36) 0%, rgb(242, 104, 67) 100%);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 2px 2px rgba(85, 8, 0, 0.54);
+  outline: none;
 }
 
-.user-navigation .header-btn:hover,
-.user-navigation .header-btn:focus {
+.btn:hover,
+.btn:focus {
   color: rgb(254, 254, 254);
   background-color: rgb(245, 134, 105);
+  background-image: linear-gradient(to top, rgb(236, 110, 93) 0%, rgb(245, 134, 105) 100%);
+  box-shadow: 0 1px 2px rgb(172, 16, 0);
 }
 
-.user-navigation .header-btn:active {
+.btn:active {
   color: rgb(254, 254, 254);
 
   background-color: rgb(215, 69, 49);
+  background-image: linear-gradient(to top, rgb(225, 97, 62) 0%, rgb(215, 69, 49) 100%);
+  box-shadow: inset 0 2px 2px rgb(148, 39, 24);
 }
 
 .header-modal {
   position: absolute;
-  top: 37px;
+  top: 36px;
   right: 0;
+  z-index: 10;
 
-  padding: 20px 15px;
+  padding: 19px 15px 20px 15px;
 
   font-size: 13px;
   color: rgb(50, 50, 50);
@@ -310,9 +320,31 @@ img {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
+.modal-item {
+  margin-bottom: 20px;
+}
+
+.modal-item:last-child {
+  margin-bottom: 0;
+}
+
+.header-modal::before {
+  position: absolute;
+  top: -6px;
+
+  min-width: 100%;
+  height: 6px;
+
+  content: "";
+}
+
+.header-modal input {
+  width: 100%;
+}
+
 .header-modal input,
 .header-modal textarea {
-  padding: 9px 15px;
+  padding: 9px 15px 9px 13px;
 
   font-size: 16px;
   font-weight: 700;
@@ -326,14 +358,32 @@ img {
 
 .header-modal input:hover,
 .header-modal textarea:hover {
-  outline: 2px solid rgba(154, 154, 154, 0.52);
-  border-radius: 4px;
+  box-shadow: 0 0 0 2px rgba(154, 154, 154, 0.52);
 }
 
 .header-modal input:focus,
 .header-modal textarea:focus {
-  outline: 2px solid rgba(46, 136, 228, 0.52);
-  border-radius: 4px;
+  box-shadow: 0 0 0 2px rgba(46, 136, 228, 0.52);
+}
+
+.modal-item-login {
+  display: flex;
+}
+
+.modal-item-login .left-half {
+  margin-right: 20px;
+}
+
+.shop-login-btn:hover .shop-login-form,
+.shop-login-btn:focus .shop-login-form {
+  display: block;
+}
+
+.shop-login-form {
+  right: -2px;
+
+  padding: 20px 17px 19px 20px;
+  width: 277px;
 }
 
 .shop-login-form a,
@@ -344,6 +394,9 @@ img {
 }
 
 .shop-login-form a {
+  margin: 0;
+  padding: 0;
+
   text-decoration: underline;
 }
 

@@ -34,9 +34,9 @@
           </ul>
         </nav>
         <ul class="user-navigation">
-          <li class="user-navigation-item shop-search">
+          <li class="user-navigation-item shop-search-btn">
             <h3 class="visually-hidden">Поиск по сайту</h3>
-            <img class="shop-search-btn" src="img/svg/loupe.svg" width="17" height="17" alt="Поиск">
+            <img src="img/svg/loupe.svg" width="17" height="17" alt="Поиск">
             <form class="header-modal shop-search-form hidden-block" action="#" method="get">
               <label>
                 <span class="visually-hidden">Поиск</span>
@@ -45,26 +45,36 @@
               <button class="hidden-block" type="submit">Найти</button>
             </form>
           </li>
-          <li class="user-navigation-item shop-login">
+          <li class="user-navigation-item shop-login-btn">
             <h3 class="visually-hidden">Вход в личный кабинет</h3>
             <a href="#">Вход</a>
             <section class="header-modal shop-login-form hidden-block">
               <form action="#" method="post">
-                <label>
-                  <span class="visually-hidden">E-mail</span>
-                  <input type="email" name="login-email" placeholder="Электронная почта">
-                </label>
-                <label>
-                  <span class="visually-hidden">Пароль</span>
-                  <input type="password" name="login-password" placeholder="Пароль">
-                </label>
-                <button class="header-btn" type="submit">Войти</button>
+                <div class="modal-item">
+                  <label>
+                    <span class="visually-hidden">E-mail</span>
+                    <input type="email" name="login-email" placeholder="Электронная почта">
+                  </label>
+                </div>
+                <div class="modal-item">
+                  <label>
+                    <span class="visually-hidden">Пароль</span>
+                    <input type="password" name="login-password" placeholder="Пароль">
+                  </label>
+                </div>
+                <div class="modal-item-login">
+                  <div class="left-half">
+                    <button class="btn" type="submit">Войти</button>
+                  </div>
+                  <div class="right-half">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </div>
+                </div>
               </form>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
             </section>
           </li>
-          <li class="user-navigation-item shop-cart">
+          <li class="user-navigation-item shop-cart-btn">
             <h3 class="visually-hidden">Корзина</h3>
             <a href="#">Пусто</a>
             <div class="shop-cart-content hidden-block">
