@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <input class="slider-controls-radio" type="radio" id="slider-btn-1" name="toggle" checked>
-  <input class="slider-controls-radio" type="radio" id="slider-btn-2" name="toggle">
-  <input class="slider-controls-radio" type="radio" id="slider-btn-3" name="toggle">
+  <input class="hidden-block" type="radio" id="slider-btn-1" name="toggle" checked>
+  <input class="hidden-block" type="radio" id="slider-btn-2" name="toggle">
+  <input class="hidden-block" type="radio" id="slider-btn-3" name="toggle">
   <div class="page-wrapper">
     <div class="content-wrapper">
       <header class="page-header center">
@@ -19,9 +19,9 @@
         </a>
         <nav class="site-navigation">
           <ul>
-            <li>
+            <li class="site-navigation-item">
               <a href="#">Каталог</a>
-              <ul class="site-navigation-submenu">
+              <ul class="site-navigation-submenu hidden-block">
                 <li><a class="latest" href="#">Новинки</a></li>
                 <li><a href="catalog.html">Сливочное</a></li>
                 <li><a href="#">Щербеты</a></li>
@@ -29,26 +29,26 @@
                 <li><a href="#">Мелорин</a></li>
               </ul>
             </li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">О Компании</a></li>
+            <li class="site-navigation-item"><a href="#">Доставка и оплата</a></li>
+            <li class="site-navigation-item"><a href="#">О Компании</a></li>
           </ul>
         </nav>
         <ul class="user-navigation">
-          <li class="shop-search">
+          <li class="user-navigation-item shop-search">
             <h3 class="visually-hidden">Поиск по сайту</h3>
             <img class="shop-search-btn" src="img/svg/loupe.svg" width="17" height="17" alt="Поиск">
-            <form class="page-form" action="#" method="get">
+            <form class="header-modal shop-search-form hidden-block" action="#" method="get">
               <label>
                 <span class="visually-hidden">Поиск</span>
                 <input type="search" name="search-query" placeholder="Что ищем?">
               </label>
-              <button type="submit">Найти</button>
+              <button class="hidden-block" type="submit">Найти</button>
             </form>
           </li>
-          <li class="shop-login">
+          <li class="user-navigation-item shop-login">
             <h3 class="visually-hidden">Вход в личный кабинет</h3>
             <a href="#">Вход</a>
-            <section class="page-form shop-login-form">
+            <section class="header-modal shop-login-form hidden-block">
               <form action="#" method="post">
                 <label>
                   <span class="visually-hidden">E-mail</span>
@@ -64,10 +64,10 @@
               <a href="#">Новая регистрация</a>
             </section>
           </li>
-          <li class="shop-cart">
+          <li class="user-navigation-item shop-cart">
             <h3 class="visually-hidden">Корзина</h3>
             <a href="#">Пусто</a>
-            <div class="shop-cart-content">
+            <div class="shop-cart-content hidden-block">
               <table>
                 <tr>
                   <td><button type="button">Удалить</button></td>
@@ -93,20 +93,20 @@
         </ul>
         <section class="shop-info">
           <h2 class="visually-hidden">Контакты</h2>
-          <p>С 10 до 20 ежедневно</p>
+          <p>С 10 до 20, ежедневно</p>
           <a href="tel:88124502525">8 812 450-25-25</a>
         </section>
       </header>
       <div class="slider center">
-        <div class="slide" id="slide1">
+        <div class="slide hidden-block" id="slide1">
           <p class="slider-title">Крем-брюле и пломбир с малиновым джемом</p>
           <a class="slider-btn" href="#">Давайте оба!</a>
         </div>
-        <div class="slide" id="slide2">
+        <div class="slide hidden-block" id="slide2">
           <p class="slider-title">Шоколадный пломбир и лимонный сорбет</p>
           <a class="slider-btn" href="#">Давайте оба!</a>
         </div>
-        <div class="slide" id="slide3">
+        <div class="slide hidden-block" id="slide3">
           <p class="slider-title">Пломбир с помадкой и клубничный щербет</p>
           <a class="slider-btn" href="#">Давайте оба!</a>
         </div>
@@ -239,7 +239,7 @@
           </p>
         </section>
       </footer>
-      <section class="page-form feedback-form">
+      <section class="page-form feedback-form hidden-block">
         <h2 class="visually-hidden">Обратная связь</h2>
         <p class="lead">Мы обязательно вам ответим!</p>
         <form action="#" method="post">
