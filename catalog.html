@@ -33,7 +33,10 @@
         <ul class="user-navigation">
           <li class="user-navigation-item shop-search-btn">
             <h3 class="visually-hidden">Поиск по сайту</h3>
-            <img src="img/svg/loupe.svg" width="17" height="17" alt="Поиск">
+            <!-- <img class="loupe" src="img/svg/loupe.svg" width="17" height="17" alt="Поиск"> -->
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+              <path class="loupe-svg" fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
+            </svg>
             <form class="header-modal shop-search-form hidden-block" action="#" method="get">
               <label>
                 <span class="visually-hidden">Поиск</span>
@@ -44,60 +47,75 @@
           </li>
           <li class="user-navigation-item shop-login-btn">
             <h3 class="visually-hidden">Вход в личный кабинет</h3>
-            <a href="#">Вход</a>
-            <section class="header-modal shop-login-form hidden-block">
-              <form action="#" method="post">
-                <div class="modal-item">
-                  <label>
-                    <span class="visually-hidden">E-mail</span>
-                    <input type="email" name="login-email" placeholder="Электронная почта">
-                  </label>
-                </div>
-                <div class="modal-item">
-                  <label>
-                    <span class="visually-hidden">Пароль</span>
-                    <input type="password" name="login-password" placeholder="Пароль">
-                  </label>
-                </div>
-                <div class="modal-item-login">
-                  <div class="left-half">
-                    <button class="btn" type="submit">Войти</button>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
+                <g class="entrance-svg" fill="#fff">
+                  <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
+                  <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
+                </g>
+              </svg>
+              Вход</a>
+              <section class="header-modal shop-login-form hidden-block">
+                <form action="#" method="post">
+                  <div class="modal-item">
+                    <label>
+                      <span class="visually-hidden">E-mail</span>
+                      <input type="email" name="login-email" placeholder="Электронная почта">
+                    </label>
                   </div>
-                  <div class="right-half">
-                    <a href="#">Забыли пароль?</a>
-                    <a href="#">Новая регистрация</a>
+                  <div class="modal-item">
+                    <label>
+                      <span class="visually-hidden">Пароль</span>
+                      <input type="password" name="login-password" placeholder="Пароль">
+                    </label>
                   </div>
+                  <div class="modal-item-login">
+                    <div class="left-half">
+                      <button class="btn" type="submit">Войти</button>
+                    </div>
+                    <div class="right-half">
+                      <a href="#">Забыли пароль?</a>
+                      <a href="#">Новая регистрация</a>
+                    </div>
+                  </div>
+                </form>
+              </section>
+            </li>
+            <li class="user-navigation-item shop-cart-btn">
+              <h3 class="visually-hidden">Корзина</h3>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
+                  <g class="basket-svg" fill="#FFF">
+                    <path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
+                    <circle cx="6.984" cy="18" r="2"/>
+                    <circle cx="15.984" cy="18" r="2"/>
+                  </g>
+                </svg>
+                Пусто</a>
+                <div class="shop-cart-content hidden-block">
+                  <table>
+                    <tr>
+                      <td><button type="button">Удалить</button></td>
+                      <td><img src="img/content/icecream/icecream-1-mini.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+                      <td><a href="#">Пломбир с апельсиновым джемом</a></td>
+                      <td>1,5 кг x <span class="price">200 руб.</span></td>
+                      <td>300 руб.</td>
+                    </tr>
+                    <tr>
+                      <td><button type="button">Удалить</button></td>
+                      <td><img src="img/content/icecream/icecream-3-mini.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                      <td><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
+                      <td>1,5 кг x <span class="price">300 руб.</span></td>
+                      <td>450 руб.</td>
+                    </tr>
+                    <tr>
+                      <td class="total" colspan="5">Итого: 750 руб.</td>
+                    </tr>
+                  </table>
+                  <a class="header-btn" href="#">Оформить заказ</a>
                 </div>
-              </form>
-            </section>
-          </li>
-          <li class="user-navigation-item shop-cart-btn">
-            <h3 class="visually-hidden">Корзина</h3>
-            <a href="#">Пусто</a>
-            <div class="shop-cart-content hidden-block">
-              <table>
-                <tr>
-                  <td><button type="button">Удалить</button></td>
-                  <td><img src="img/content/icecream/icecream-1-mini.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-                  <td><a href="#">Пломбир с апельсиновым джемом</a></td>
-                  <td>1,5 кг x <span class="price">200 руб.</span></td>
-                  <td>300 руб.</td>
-                </tr>
-                <tr>
-                  <td><button type="button">Удалить</button></td>
-                  <td><img src="img/content/icecream/icecream-3-mini.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                  <td><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
-                  <td>1,5 кг x <span class="price">300 руб.</span></td>
-                  <td>450 руб.</td>
-                </tr>
-                <tr>
-                  <td class="total" colspan="5">Итого: 750 руб.</td>
-                </tr>
-              </table>
-              <a class="header-btn" href="#">Оформить заказ</a>
-            </div>
-          </li>
-        </ul>
+              </li>
+            </ul>
         <section class="shop-info">
           <h2 class="visually-hidden">Контакты</h2>
           <p>С 10 до 20 ежедневно</p>
