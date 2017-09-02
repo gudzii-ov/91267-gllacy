@@ -215,10 +215,15 @@ img {
   border-radius: 50%;
 }
 
-.shop-search-btn img {
+.shop-search-btn svg {
   position: absolute;
   top: 8px;
   left: 8px;
+}
+
+.shop-search-btn:hover .loupe-svg,
+.shop-search-btn:focus .loupe-svg {
+  fill: rgb(0, 0, 0);
 }
 
 .shop-search-btn:hover .shop-search-form {
@@ -231,15 +236,21 @@ img {
 
 .user-navigation-item > a {
   display: block;
-  padding: 8px 16px;
+  padding: 0 16px;
 
   font-size: 14px;
   font-weight: 500;
-  line-height: 16px;
+  line-height: 32px;
   text-decoration: none;
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 30px;
+}
+
+.user-navigation-item svg {
+  margin-right: 3px;
+
+  vertical-align: middle;
 }
 
 .shop-search-btn:hover,
@@ -250,25 +261,15 @@ img {
   background-color: rgb(248, 247, 244);
 }
 
-.shop-login-btn,
-.shop-cart-btn {
-  background-repeat: no-repeat;
-  background-position: 17px 50%;
-}
-
-.shop-login-btn a,
-.shop-cart-btn a {
-  padding-left: 44px;
-}
-
-.shop-login-btn {
-  background-image: url(../img/svg/entrance.svg);
+.user-navigation-item:hover .entrance-svg,
+.user-navigation-item:focus .entrance-svg,
+.user-navigation-item:hover .basket-svg,
+.user-navigation-item:focus .basket-svg {
+  fill: rgb(0, 0, 0);
 }
 
 .shop-cart-btn {
   min-width: 117px;
-
-  background-image: url(../img/svg/basket.svg);
 }
 
 .btn {
