@@ -12,8 +12,8 @@
   <input class="hidden-block" type="radio" id="slider-btn-2" name="toggle">
   <input class="hidden-block" type="radio" id="slider-btn-3" name="toggle">
   <div class="page-wrapper">
-    <div class="content-wrapper">
-      <header class="page-header center">
+    <div class="content-wrapper center">
+      <header class="page-header">
         <a class="page-header-logo">
           <img src="img/svg/logo.svg" width="154" height="64" alt="GllacyShop">
         </a>
@@ -88,11 +88,10 @@
             <h3 class="visually-hidden">Корзина</h3>
             <a href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
-                <g class="basket-svg" fill="#FFF">
-                  <path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
-                  <circle cx="6.984" cy="18" r="2"/>
-                  <circle cx="15.984" cy="18" r="2"/>
-                </g>
+                <path class="basket" fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/>
+                <circle class="basket-svg" fill="#343434" cx="6.984" cy="18" r="2"/>
+                <circle class="basket-svg" fill="#343434" cx="15.984" cy="18" r="2"/>
+                <path class="basket-svg" fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
               </svg>
               Пусто
             </a>
@@ -126,7 +125,7 @@
           <a href="tel:88124502525">8 812 450-25-25</a>
         </section>
       </header>
-      <div class="slider center">
+      <div class="slider">
         <div class="slide hidden-block" id="slide1">
           <p class="slider-title">Крем-брюле и пломбир с малиновым джемом</p>
           <a class="slider-btn" href="#">Давайте оба!</a>
@@ -146,7 +145,7 @@
         </div>
       </div>
       <main>
-        <section class="banners center">
+        <section class="banners">
           <article class="banners-item banner-raspberry">
             <h3 class="banners-header">Малинка даром!</h3>
             <p>
@@ -162,7 +161,7 @@
             <a class="btn" href="#">Хочу шоколадки!</a>
           </article>
         </section>
-        <section class="catalog center">
+        <section class="catalog">
           <h2 class="visually-hidden">Хиты продаж</h2>
           <article class="catalog-item catalog-hit">
             <img src="img/content/icecream/icecream-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -170,7 +169,7 @@
             <div class="price">
               <span>310<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36">
                 <path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"/>
-              </svg></span><b>/кг</b>
+              </svg></span><b> /кг</b>
             </div>
             <div class="catalog-hover hidden-block">
               <a class="btn" href="#">Быстрый просмотр</a>
@@ -182,7 +181,7 @@
             <div class="price">
               <span>380<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36">
                 <path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"/>
-              </svg></span><b>/кг</b>
+              </svg></span><b> /кг</b>
             </div>
             <div class="catalog-hover hidden-block">
               <a class="btn" href="#">Быстрый просмотр</a>
@@ -194,7 +193,7 @@
             <div class="price">
               <span>355<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36">
                 <path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"/>
-              </svg></span><b>/кг</b>
+              </svg></span><b> /кг</b>
             </div>
             <div class="catalog-hover hidden-block">
               <a class="btn" href="#">Быстрый просмотр</a>
@@ -206,30 +205,28 @@
             <div class="price">
               <span>415<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36">
                 <path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"/>
-              </svg></span><b>/кг</b>
+              </svg></span><b> /кг</b>
             </div>
             <div class="catalog-hover hidden-block">
               <a class="btn" href="#">Быстрый просмотр</a>
             </div>
           </article>
         </section>
-        <div class="center">
-          <article class="about-us">
-            <h2 class="visually-hidden">О нас</h2>
-            <p class="lead">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
-            <div class="about-us-container">
-              <div class="about-us-half-left">
-                <p class="about-us-item about-production">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-                <p class="about-us-item about-milk">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
-              </div>
-              <div class="about-us-half-right">
-                <p class="about-us-item about-ingredient">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-                <p class="about-us-item about-delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-              </div>
+        <article class="about-us">
+          <h2 class="visually-hidden">О нас</h2>
+          <p class="lead">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
+          <div class="about-us-container">
+            <div class="about-us-half-left">
+              <p class="about-us-item about-production">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+              <p class="about-us-item about-milk">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
             </div>
-          </article>
-        </div>
-        <div class="container center">
+            <div class="about-us-half-right">
+              <p class="about-us-item about-ingredient">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+              <p class="about-us-item about-delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+            </div>
+          </div>
+        </article>
+        <div class="container">
           <section class="blog-news">
             <h2 class="blog-news-header">Новое в нашем блоге</h2>
             <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
@@ -248,7 +245,7 @@
             </div>
           </section>
         </div>
-        <section class="map center">
+        <section class="map">
           <h2 class="visually-hidden">Как нас найти?</h2>
           <article class="contacts">
             <p class="lead">Адрес главного офиса и офлайн магазина:</p>
@@ -260,7 +257,7 @@
           </article>
         </section>
       </main>
-      <footer class="page-footer center">
+      <footer class="page-footer">
         <section class="footer-social">
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
           <a class="social social-tw" href="#">Твиттер</a>
