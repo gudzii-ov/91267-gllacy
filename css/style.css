@@ -32,6 +32,7 @@ img {
 
 .center {
   width: 1200px;
+  margin: 0 auto;
   padding: 0 27px 0 27px;
 }
 
@@ -72,6 +73,68 @@ img {
   box-shadow: inset 0 2px 2px rgb(148, 39, 24);
 }
 
+.header-modal {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  z-index: 10;
+
+  padding: 19px 15px 20px 15px;
+
+  font-size: 13px;
+  color: rgb(50, 50, 50);
+
+  background-color: rgb(248, 247, 244);
+  border-radius: 5px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.modal-item {
+  margin-bottom: 20px;
+}
+
+.modal-item:last-child {
+  margin-bottom: 0;
+}
+
+.header-modal::before {
+  position: absolute;
+  top: -6px;
+
+  min-width: 100%;
+  height: 6px;
+
+  content: "";
+}
+
+.header-modal input {
+  width: 100%;
+}
+
+.header-modal input,
+.header-modal textarea {
+  padding: 9px 15px 9px 13px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: rgb(153, 153, 153);
+
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 4px;
+}
+
+.header-modal input:hover,
+.header-modal textarea:hover {
+  box-shadow: 0 0 0 2px rgba(154, 154, 154, 0.52);
+}
+
+.header-modal input:focus,
+.header-modal textarea:focus {
+  box-shadow: 0 0 0 2px rgba(46, 136, 228, 0.52);
+}
+
 .page-wrapper {
   min-width: 1254px;
 
@@ -79,17 +142,15 @@ img {
   background-position: top center;
 }
 
-.content-wrapper {
+/*.content-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-}
+}*/
 
 .page-header {
   position: relative;
-  top: 0;
-  left: 0;
 
   display: flex;
   width: 100%;
@@ -374,7 +435,7 @@ img {
   text-align: center;
 }
 
-.shop-cart-content .image-cell img {
+.image-cell img {
   width: 33px;
   height: 33px;
 
@@ -387,16 +448,16 @@ img {
   vertical-align: middle;
 }
 
-.shop-cart-content .name-cell a {
+.name-cell a {
   font-size: 13px;
   line-height: 16px;
   color: rgb(50, 50, 50);
   text-decoration: none;
 }
 
-.shop-cart-content .name-cell a:hover,
-.shop-cart-content .name-cell a:focus,
-.shop-cart-content .name-cell a:active {
+.name-cell a:hover,
+.name-cell a:focus,
+.name-cell a:active {
   color: rgb(232, 77, 55);
 }
 
@@ -427,68 +488,6 @@ img {
 
 .shop-cart-content .checkout-cell {
   text-align: right;
-}
-
-.header-modal {
-  position: absolute;
-  top: 36px;
-  right: 0;
-  z-index: 10;
-
-  padding: 19px 15px 20px 15px;
-
-  font-size: 13px;
-  color: rgb(50, 50, 50);
-
-  background-color: rgb(248, 247, 244);
-  border-radius: 5px;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-}
-
-.modal-item {
-  margin-bottom: 20px;
-}
-
-.modal-item:last-child {
-  margin-bottom: 0;
-}
-
-.header-modal::before {
-  position: absolute;
-  top: -6px;
-
-  min-width: 100%;
-  height: 6px;
-
-  content: "";
-}
-
-.header-modal input {
-  width: 100%;
-}
-
-.header-modal input,
-.header-modal textarea {
-  padding: 9px 15px 9px 13px;
-
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  color: rgb(153, 153, 153);
-
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgba(178, 178, 178, 0.52);
-  border-radius: 4px;
-}
-
-.header-modal input:hover,
-.header-modal textarea:hover {
-  box-shadow: 0 0 0 2px rgba(154, 154, 154, 0.52);
-}
-
-.header-modal input:focus,
-.header-modal textarea:focus {
-  box-shadow: 0 0 0 2px rgba(46, 136, 228, 0.52);
 }
 
 .modal-item-login {
