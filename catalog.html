@@ -133,21 +133,21 @@
         <h1 class="catalog-header">Сливочное мороженое</h1>
         <section class="catalog-filter">
           <h2 class="visually-hidden">Фильтры каталога мороженого</h2>
-          <form action="#" method="get">
-            <div>
+          <form class="catalog-filter-form" action="#" method="get">
+            <div class="catalog-filter-item filter-sort">
               <label for="sort-field">Сортировка:</label>
-              <select class="catalog-filter-item" name="sort" id="sort-field">
+              <select name="sort" id="sort-field">
                 <option value="by-rating" selected>По популярности</option>
                 <option value="by-price-ascending">Сначала недорогие</option>
                 <option value="by-price-descending">Сначала дорогие</option>
                 <option value="by-fat">По жирности</option>
               </select>
             </div>
-            <div class="catalog-filter-item">
+            <div class="catalog-filter-item filter-price">
               Цена: 100 руб. - 500 руб.
               <!-- Слайдер цены -->
             </div>
-            <div class="catalog-filter-item">
+            <div class="catalog-filter-item filter-fat">
               Жирность:
               <label>
                 <input type="radio" name="fat" value="0"> 0%
@@ -162,7 +162,7 @@
                 <input type="radio" name="fat" value="more-30"> выше 30%
               </label>
             </div>
-            <div class="catalog-filter-item">
+            <div class="catalog-filter-item filter-filler">
               Наполнители:
               <label>
                 <input type="checkbox" name="chocolate" checked> шоколадные
@@ -180,7 +180,7 @@
                 <input type="checkbox" name="jam"> джемы
               </label>
             </div>
-            <button class="catalog-filter-item" type="submit">Применить</button>
+            <button class="catalog-filter-item filter-btn" type="submit">Применить</button>
           </form>
         </section>
         <section class="catalog">
