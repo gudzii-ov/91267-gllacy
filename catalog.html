@@ -134,53 +134,40 @@
         <section class="catalog-filter">
           <h2 class="visually-hidden">Фильтры каталога мороженого</h2>
           <form class="catalog-filter-form" action="#" method="get">
-            <div class="catalog-filter-item filter-sort">
-              <label for="sort-field">Сортировка:</label>
-              <select name="sort" id="sort-field">
+            <fieldset class="catalog-filter-item filter-sort">
+              <legend>Сортировка:</legend>
+              <select class="filter-like-btn" name="sort" id="sort-field">
                 <option value="by-rating" selected>По популярности</option>
                 <option value="by-price-ascending">Сначала недорогие</option>
                 <option value="by-price-descending">Сначала дорогие</option>
                 <option value="by-fat">По жирности</option>
               </select>
-            </div>
-            <div class="catalog-filter-item filter-price">
-              Цена: 100 руб. - 500 руб.
-              <!-- Слайдер цены -->
-            </div>
-            <div class="catalog-filter-item filter-fat">
-              Жирность:
-              <label>
-                <input type="radio" name="fat" value="0"> 0%
-              </label>
-              <label>
-                <input type="radio" name="fat" value="less-10" checked> до 10%
-              </label>
-              <label>
-                <input type="radio" name="fat" value="less-30"> до 30%
-              </label>
-              <label>
-                <input type="radio" name="fat" value="more-30"> выше 30%
-              </label>
-            </div>
-            <div class="catalog-filter-item filter-filler">
-              Наполнители:
-              <label>
-                <input type="checkbox" name="chocolate" checked> шоколадные
-              </label>
-              <label>
-                <input type="checkbox" name="shugar-powders" checked> сахарные присыпки
-              </label>
-              <label>
-                <input type="checkbox" name="fruits"> фрукты
-              </label>
-              <label>
-                <input type="checkbox" name="syrup"> сиропы
-              </label>
-              <label>
-                <input type="checkbox" name="jam"> джемы
-              </label>
-            </div>
-            <button class="catalog-filter-item filter-btn" type="submit">Применить</button>
+            </fieldset>
+            <fieldset class="catalog-filter-item filter-price">
+              <legend>Цена:</legend>
+              <div class="filter-price-slider">
+              </div>
+            </fieldset>
+            <fieldset class="catalog-filter-item filter-fat">
+              <legend>Жирность:</legend>
+              <div class="filter-like-btn">
+                <input type="radio" name="fat" id="fat-0" value="0"> <label for="fat-0">0%</label>
+                <input type="radio" name="fat" id="less-10" value="less-10" checked> <label for="less-10">до 10%</label>
+                <input type="radio" name="fat" id="less-30" value="less-30"> <label for="less-30">до 30%</label>
+                <input type="radio" name="fat" id="more-30" value="more-30"> <label for="more-30">выше 30%</label>
+              </div>
+            </fieldset>
+            <fieldset class="catalog-filter-item filter-filler">
+              <legend>Наполнители:</legend>
+              <div class="filter-like-btn">
+                <input type="checkbox" name="chocolate" id="chocolate" checked> <label for="chocolate">шоколадные</label>
+                <input type="checkbox" name="shugar-powders" id="shugar-powders" checked> <label for="shugar-powders">сахарные присыпки</label>
+                <input type="checkbox" name="fruits" id="fruits"> <label for="fruits">фрукты</label>
+                <input type="checkbox" name="syrup" id="syrup"> <label for="syrup">сиропы</label>
+                <input type="checkbox" name="jam" id="jam"> <label for="jam">джемы</label>
+              </div>
+            </fieldset>
+            <button class="filter-btn" type="submit">Применить</button>
           </form>
         </section>
         <section class="catalog">
