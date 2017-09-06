@@ -5,7 +5,7 @@
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <input class="hidden-block" type="radio" id="slider-btn-1" name="toggle" checked>
@@ -288,23 +288,24 @@
         <form action="https://echo.htmlacademy.ru/" method="post">
           <div class="modal-item">
             <div class="label-box">
-              <input type="text" name="feedback-name" id="feedback-name-field">
-              <label class="modal-label" for="feedback-name-field">Как вас зовут?</label>
+              <input type="text" name="feedback-name" id="feedback-name-field" placeholder="Как вас зовут?">
+              <label class="modal-label visually-hidden" for="feedback-name-field">Как вас зовут?</label>
             </div>
           </div>
           <div class="modal-item">
             <div class="label-box">
-              <input type="email" name="feedback-email" id="feedback-email-field">
-              <label class="modal-label" for="feedback-email-field">Ваша почта для ответа?</label>
+              <input type="email" name="feedback-email" id="feedback-email-field" placeholder="Ваша почта для ответа?">
+              <label class="modal-label visually-hidden" for="feedback-email-field">Ваша почта для ответа?</label>
             </div>
           </div>
           <div class="modal-item">
-            <textarea rows="5" cols="40" name="feedback-text" id="feedback-text-field"></textarea>
+            <textarea rows="5" cols="40" name="feedback-text" id="feedback-text-field" placeholder="Напишите что-нибудь..."></textarea>
             <div class="label-box">
-              <label class="modal-label" for="feedback-text-field">Напишите что-нибудь...</label>
+              <label class="modal-label visually-hidden" for="feedback-text-field">Напишите что-нибудь...</label>
             </div>
           </div>
           <button class="btn" type="submit">Отправить</button>
+          <button class="close-form-btn" type="button">Закрыть окно</button>
         </form>
       </section>
     </div>
