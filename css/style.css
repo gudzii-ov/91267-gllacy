@@ -115,6 +115,7 @@ img {
 .header-modal input,
 .header-modal textarea {
   padding: 9px 15px 9px 13px;
+  max-width: 100%;
 
   font-size: 16px;
   font-weight: 700;
@@ -136,19 +137,35 @@ img {
   box-shadow: 0 0 0 2px rgba(46, 136, 228, 0.52);
 }
 
+.label-box {
+  position: relative;
+
+  width: 270px;
+}
+
+.header-modal .modal-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+
+  transition: 0.2s ease all;
+  pointer-events: none;
+}
+/*
+.header-modal input:hover ~ .label-box .modal-label,
+.header-modal textarea:hover ~ .label-box .modal-label {
+  font-size: 12px;
+
+  transform: translateY(-22px);
+}*/
+
 .page-wrapper {
   min-width: 1254px;
 
   background-repeat: no-repeat;
   background-position: top center;
 }
-
-/*.content-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-}*/
 
 .page-header {
   position: relative;
@@ -1574,6 +1591,10 @@ img {
 
 .footer-catalog {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.feedback-form {
+  width: 318px;
 }
 
 .feedback-form .lead {

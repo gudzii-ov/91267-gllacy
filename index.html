@@ -61,16 +61,12 @@
             <section class="header-modal shop-login-form hidden-block">
               <form action="https://echo.htmlacademy.ru/" method="post">
                 <div class="modal-item">
-                  <label>
-                    <span class="visually-hidden">E-mail</span>
-                    <input type="email" name="login-email" placeholder="Электронная почта">
-                  </label>
+                  <label for="login-email-field">Электронная почта</label>
+                  <input type="email" name="login-email" id="login-email-field">
                 </div>
                 <div class="modal-item">
-                  <label>
-                    <span class="visually-hidden">Пароль</span>
-                    <input type="password" name="login-password" placeholder="Пароль">
-                  </label>
+                  <label for="login-password-field">Пароль</label>
+                  <input type="password" name="login-password" id="login-password-field">
                 </div>
                 <div class="modal-item-login">
                   <div class="left-half">
@@ -236,10 +232,8 @@
               <h2 class="visually-hidden">Подписка на рассылку</h2>
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               <form action="https://echo.htmlacademy.ru/" method="post">
-                <label>
-                  <span class="visually-hidden">Ваш e-mail для подписки</span>
-                  <input type="email" name="subscription-email" placeholder="Электронная почта">
-                </label>
+                <label for="subscription-email-field">Электронная почта</label>
+                <input type="email" name="subscription-email" id="subscription-email-field">
                 <button class="btn" type="submit">Отправить</button>
               </form>
             </div>
@@ -288,22 +282,28 @@
           </p>
         </section>
       </footer>
-      <section class="page-form feedback-form hidden-block">
+      <section class="header-modal feedback-form">
         <h2 class="visually-hidden">Обратная связь</h2>
         <p class="lead">Мы обязательно вам ответим!</p>
         <form action="https://echo.htmlacademy.ru/" method="post">
-          <label>
-            <span class="visually-hidden">Ваше имя</span>
-            <input type="text" name="feedback-name" placeholder="Как вас зовут?">
-          </label>
-          <label>
-            <span class="visually-hidden">Ваш e-mail</span>
-            <input type="email" name="feedback-email" placeholder="Ваша почта для ответа?">
-          </label>
-          <label>
-            <span class="visually-hidden">Ваш отзыв</span>
-            <textarea rows="5" cols="40" name="feedback-text" placeholder="Напишите что-нибудь..."></textarea>
-          </label>
+          <div class="modal-item">
+            <div class="label-box">
+              <label class="modal-label" for="feedback-name-field">Как вас зовут?</label>
+            </div>
+            <input type="text" name="feedback-name" id="feedback-name-field">
+          </div>
+          <div class="modal-item">
+            <div class="label-box">
+              <label class="modal-label" for="feedback-email-field">Ваша почта для ответа?</label>
+            </div>
+            <input type="email" name="feedback-email" id="feedback-email-field">
+          </div>
+          <div class="modal-item">
+            <div class="label-box">
+              <label class="modal-label" for="feedback-text-field">Напишите что-нибудь...</label>
+            </div>
+            <textarea rows="5" cols="40" name="feedback-text" id="feedback-text-field"></textarea>
+          </div>
           <button class="btn" type="submit">Отправить</button>
         </form>
       </section>
