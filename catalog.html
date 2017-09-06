@@ -36,7 +36,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
               <path class="loupe-svg" fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
             </svg>
-            <form class="header-modal shop-search-form hidden-block" action="#" method="get">
+            <form class="header-modal shop-search-form hidden-block" action="https://echo.htmlacademy.ru/" method="get">
               <label>
                 <span class="visually-hidden">Поиск</span>
                 <input type="search" name="search-query" placeholder="Что ищем?">
@@ -56,7 +56,7 @@
               Вход
             </a>
             <section class="header-modal shop-login-form hidden-block">
-              <form action="#" method="post">
+              <form action="https://echo.htmlacademy.ru/" method="post">
                 <div class="modal-item">
                   <label>
                     <span class="visually-hidden">E-mail</span>
@@ -133,24 +133,28 @@
         <h1 class="catalog-header">Сливочное мороженое</h1>
         <section class="catalog-filter">
           <h2 class="visually-hidden">Фильтры каталога мороженого</h2>
-          <form class="catalog-filter-form" action="#" method="get">
-            <fieldset class="catalog-filter-item filter-sort">
+          <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="catalog-filter-item">
               <legend>Сортировка:</legend>
-              <select class="filter-like-btn" name="sort" id="sort-field">
-                <option value="by-rating" selected>По популярности</option>
-                <option value="by-price-ascending">Сначала недорогие</option>
-                <option value="by-price-descending">Сначала дорогие</option>
-                <option value="by-fat">По жирности</option>
+              <select class="filter-like-btn filter-sort" name="sort" id="sort-field">
+                <option value="by-rating" selected>по популярности</option>
+                <option value="by-price-ascending">сначала недорогие</option>
+                <option value="by-price-descending">сначала дорогие</option>
+                <option value="by-fat">по жирности</option>
               </select>
             </fieldset>
             <fieldset class="catalog-filter-item filter-price">
-              <legend>Цена:</legend>
-              <div class="filter-price-slider">
+              <legend>Цена: 100 руб. - 500 руб.</legend>
+              <div class="filter-price-slider filter-like-btn">
+                <div class="filter-price-rail">
+                  <div class="filter-price-range">
+                  </div>
+                </div>
               </div>
             </fieldset>
             <fieldset class="catalog-filter-item filter-fat">
               <legend>Жирность:</legend>
-              <div class="filter-like-btn">
+              <div class="filter-fat-controls filter-like-btn">
                 <input type="radio" name="fat" id="fat-0" value="0"> <label for="fat-0">0%</label>
                 <input type="radio" name="fat" id="less-10" value="less-10" checked> <label for="less-10">до 10%</label>
                 <input type="radio" name="fat" id="less-30" value="less-30"> <label for="less-30">до 30%</label>
@@ -159,7 +163,7 @@
             </fieldset>
             <fieldset class="catalog-filter-item filter-filler">
               <legend>Наполнители:</legend>
-              <div class="filter-like-btn">
+              <div class="filter-filler-controls filter-like-btn">
                 <input type="checkbox" name="chocolate" id="chocolate" checked> <label for="chocolate">шоколадные</label>
                 <input type="checkbox" name="shugar-powders" id="shugar-powders" checked> <label for="shugar-powders">сахарные присыпки</label>
                 <input type="checkbox" name="fruits" id="fruits"> <label for="fruits">фрукты</label>
