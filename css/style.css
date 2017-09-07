@@ -145,7 +145,6 @@ img {
   color: rgb(153, 153, 153);
 
   transition: 0.2s ease all;
-  pointer-events: none;
 }
 
 .header-modal input:hover,
