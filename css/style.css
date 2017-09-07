@@ -408,7 +408,7 @@ img {
 }
 
 .shop-cart-btn .basket {
-  opacity: 0;
+  fill: rgba(255, 255, 255, 0);
 }
 
 .shop-cart-filled-btn > a {
