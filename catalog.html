@@ -37,10 +37,10 @@
               <path class="loupe-svg" fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
             </svg>
             <form class="header-modal shop-search-form hidden-block" action="https://echo.htmlacademy.ru/" method="get">
-              <label>
-                <span class="visually-hidden">Поиск</span>
-                <input type="search" name="search-query" placeholder="Что ищем?">
-              </label>
+              <input type="search" name="search-query" id="shop-search-field" required>
+              <div class="label-box">
+                <label for="shop-search-field">Что ищем?</label>
+              </div>
               <button class="hidden-block" type="submit">Найти</button>
             </form>
           </li>
@@ -58,16 +58,16 @@
             <section class="header-modal shop-login-form hidden-block">
               <form action="https://echo.htmlacademy.ru/" method="post">
                 <div class="modal-item">
-                  <label>
-                    <span class="visually-hidden">E-mail</span>
-                    <input type="email" name="login-email" placeholder="Электронная почта">
-                  </label>
+                  <input type="email" name="login-email" id="login-email-field" required>
+                  <div class="label-box">
+                    <label for="login-email-field">Электронная почта</label>
+                  </div>
                 </div>
                 <div class="modal-item">
-                  <label>
-                    <span class="visually-hidden">Пароль</span>
-                    <input type="password" name="login-password" placeholder="Пароль">
-                  </label>
+                  <input type="password" name="login-password" id="login-password-field" required>
+                  <div class="label-box">
+                    <label for="login-password-field">Пароль</label>
+                  </div>
                 </div>
                 <div class="modal-item-login">
                   <div class="left-half">
