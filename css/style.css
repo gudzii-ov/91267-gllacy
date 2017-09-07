@@ -1110,7 +1110,7 @@ img {
   border-radius: 50%;
 }
 
-.catalog-item a {
+.catalog-item > a {
   display: inline-block;
   width: 96%;
 
@@ -1146,6 +1146,7 @@ img {
 
 .catalog-hover .btn {
   align-self: center;
+  flex-grow: 0;
   margin-bottom: 22px;
 }
 
