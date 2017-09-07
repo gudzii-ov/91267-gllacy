@@ -705,9 +705,9 @@ img {
 }
 
 .breadcrumbs li {
-    position: relative;
+  position: relative;
 
-    padding-right: 20px;
+  padding-right: 20px;
 }
 
 .breadcrumbs a {
@@ -845,7 +845,27 @@ img {
 }
 
 .filter-sort {
+  width: 194px;
+  height: 36px;
+  padding: 8px 17px 8px 13px;
+
   color: rgb(255, 255, 255);
+
+  background-image: url("../img/svg/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 170px center;
+  background-size: 9px 5px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  -ms-appearance: none;
+  appearance: none;
+}
+
+.filter-sort::-ms-expand {
+  display: none;
 }
 
 .filter-sort:hover,
@@ -853,6 +873,7 @@ img {
   color: rgb(50, 50, 50);
 
   background-color: rgb(255, 255, 255);
+  background-image: url("../img/svg/select-arrow-black.svg");
 }
 
 .filter-price-slider {
