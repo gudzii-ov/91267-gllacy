@@ -952,7 +952,7 @@ img {
 
 .filter-fat input:checked + label::after {
   position: absolute;
-  top: 6px;
+  top: 5px;
   left: 7px;
 
   display: block;
