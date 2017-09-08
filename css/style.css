@@ -211,6 +211,8 @@ img {
 
   display: inline-block;
   margin-left: -5px;
+
+  vertical-align: middle;
 }
 
 .site-navigation-item > a {
@@ -330,8 +332,9 @@ img {
   position: relative;
 
   display: inline-block;
-  vertical-align: top;
   margin-right: 6px;
+
+  vertical-align: top;
 }
 
 .user-navigation-item:last-of-type {
@@ -623,8 +626,8 @@ img {
   font-weight: 700;
   line-height: 44px;
   text-decoration: none;
-  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   background-color: rgb(241, 99, 63);
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 100px;
@@ -938,6 +941,7 @@ img {
   display: inline-block;
 
   font-size: 16px;
+  vertical-align: middle;
 }
 
 .filter-fat-controls {
@@ -1406,11 +1410,11 @@ img {
   display: inline-block;
   min-width: 25px;
   min-height: 25px;
-  vertical-align: middle;
 
   line-height: 25px;
   text-align: center;
   text-decoration: none;
+  vertical-align: middle;
 
   border-radius: 50%;
 }
@@ -1493,6 +1497,7 @@ img {
   padding: 0;
 
   font-size: 0;
+  vertical-align: middle;
 
   background-color: transparent;
   background-repeat: no-repeat;
