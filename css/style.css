@@ -877,6 +877,10 @@ img {
   background-image: url("../img/svg/select-arrow-black.svg");
 }
 
+.filter-sort option {
+  color: rgb(50, 50, 50);
+}
+
 .filter-price-slider {
   padding: 16px 21px 17px 21px;
 }
