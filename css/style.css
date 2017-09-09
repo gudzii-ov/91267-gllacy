@@ -1142,8 +1142,8 @@ img {
   top: -6px;
   bottom: -76px;
   left: -12px;
-  right: -12px;
-  z-index: -10;
+  right: -12px;color:
+  z-index: 10;
 
   display: flex;
   flex-direction: column;
@@ -1158,6 +1158,19 @@ img {
   align-self: center;
   flex-grow: 0;
   margin-bottom: 22px;
+
+  border: none;
+}
+
+.catalog-hover .btn:hover,
+.catalog-hover .btn:focus {
+  color: rgb(254, 254, 254);
+
+  border: none;
+}
+
+.catalog-hover .btn:active {
+  color: rgb(254, 254, 254);
 }
 
 .catalog-item:hover,
