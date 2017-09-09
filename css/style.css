@@ -863,6 +863,7 @@ img {
 }
 
 .filter-sort {
+  padding-left: 16px;
   width: 193px;
   height: 36px;
 
