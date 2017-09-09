@@ -884,9 +884,9 @@ img {
   background-size: 11px 10px;
 }
 
-/*.filter-sort::-ms-expand {
+.filter-sort::-ms-expand {
   display: none;
-}*/
+}
 
 .filter-sort:hover,
 .filter-sort:active {
