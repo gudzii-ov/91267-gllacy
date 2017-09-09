@@ -1143,7 +1143,7 @@ img {
   bottom: -76px;
   left: -12px;
   right: -12px;color:
-  z-index: 10;
+  z-index: -10px;
 
   display: flex;
   flex-direction: column;
